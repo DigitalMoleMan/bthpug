@@ -4,58 +4,89 @@
 #39b54a
 #009245
 */
-
+*{
+    font-family: 'Roboto', sans-serif;
+}
 html {
     font-size: 1rem;
 }
 
-body{
+body {
     background-color: #c7b299;
 }
 
-.navlogo{
+nav{
+    user-select: none;
+}
+
+.navlogo {
     padding: 1rem;
-    width: 20%;
+    width: 8rem;
 }
 
-.navbar-green{
+.navbar-green {
     padding: 0;
-    background-color: #39b54a!important;
-    
+    background-color: #39b54a !important;
 }
 
-.navbar-green a{
-    color: #fff!important;
+.navbar-green a {
+    color: #fff !important;
     text-indent: 1rem;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     margin: 2rem;
 }
 
-#navbar.navbar-collapse.collapse{
+.navbar-toggler:hover {
+    background-color: #009245;
+}
+
+.navbar-toggler:active {
+    background-color: #009245;
+}
+
+#navbar.navbar-collapse {
+    top: 0rem;
+    background-color: #009245;
+    color: #fff !important;
+}
+
+#navbar.navbar-collapse.collapse {
+    top: 0rem;
+    background-color: #009245;
+    color: #fff !important;
+}
+
+#navbar.navbar-collapse.collapsing {
     position: relative;
     display: block;
-    padding-left: 1rem;
-    top: 5rem;
 }
 
-#navbar.navbar-collapse{
+#navbar.navbar-collapse.show {
+    position: relative;
+    display: block;
+}
+
+
+
+.nav-item:hover {
+    background-color: #20a255;
+}
+
+.nav-item:active {
     background-color: #009245;
-    color: #fff!important;
 }
 
-main{
+main {
     background-color: #fff;
 }
 
-.index img{
+.index img {
     position: relative;
     display: block;
     width: 100%;
 }
-
-
 
 @include media-breakpoint-up(sm) {
     html {
@@ -74,5 +105,3 @@ main{
         font-size: 1.6rem;
     }
 }
-
-
