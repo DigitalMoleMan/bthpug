@@ -15,31 +15,36 @@ body {
     background-color: #c7b299;
 }
 
+header{
+    background-color: #39b54a;
+}
+
 nav{
     user-select: none;
 }
 
+.branding{
+    background-color: #39b54a;
+}
+
 .navlogo {
-    padding: 1rem;
     width: 8rem;
 }
 
 .navbar-green {
-    padding: 0;
     background-color: #39b54a !important;
 }
 
 .navbar-green a {
     color: #fff !important;
-    text-indent: 1rem;
 }
 
 .navbar-toggler {
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .navbar-toggler:hover {
-    background-color: #009245;
+    background-color: #20a255;
 }
 
 .navbar-toggler:active {
@@ -70,11 +75,11 @@ nav{
 
 
 
-.nav-item:hover {
+#navbar.navbar-collapse.collapse .nav-item:hover {
     background-color: #20a255;
 }
 
-.nav-item:active {
+#navbar.navbar-collapse.collapse .nav-item:active {
     background-color: #009245;
 }
 
