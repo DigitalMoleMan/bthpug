@@ -1,29 +1,21 @@
-/*
-#ffffff
-#c7b299
-#39b54a
-#009245
-*/
-*{
-    font-family: 'Roboto', sans-serif;
-}
+
 html {
     font-size: 1rem;
 }
 
+
 body {
-    background-color: #c7b299;
+    background-color: rgb(224, 224, 192);
+    font-family: 'Merriweather', serif;
+    color: rgb(32, 32, 32);
 }
 
-header{
-    background-color: #39b54a;
-}
-
-nav{
+nav {
     user-select: none;
+    color: #fff;
 }
 
-.branding{
+.navbar {
     background-color: #39b54a;
 }
 
@@ -31,16 +23,8 @@ nav{
     width: 8rem;
 }
 
-.navbar-green {
-    background-color: #39b54a !important;
-}
-
-.navbar-green a {
+a.nav-link {
     color: #fff !important;
-}
-
-.navbar-toggler {
-    margin: 1rem;
 }
 
 .navbar-toggler:hover {
@@ -52,28 +36,8 @@ nav{
 }
 
 #navbar.navbar-collapse {
-    top: 0rem;
     background-color: #009245;
-    color: #fff !important;
 }
-
-#navbar.navbar-collapse.collapse {
-    top: 0rem;
-    background-color: #009245;
-    color: #fff !important;
-}
-
-#navbar.navbar-collapse.collapsing {
-    position: relative;
-    display: block;
-}
-
-#navbar.navbar-collapse.show {
-    position: relative;
-    display: block;
-}
-
-
 
 #navbar.navbar-collapse.collapse .nav-item:hover {
     background-color: #20a255;
@@ -83,14 +47,16 @@ nav{
     background-color: #009245;
 }
 
-main {
-    background-color: #fff;
+h1{
+    font-weight: 300
 }
 
-.index img {
-    position: relative;
-    display: block;
-    width: 100%;
+h2{
+    font-weight: 300
+}
+
+p{
+    font-weight: 500
 }
 
 @include media-breakpoint-up(sm) {
@@ -110,3 +76,4 @@ main {
         font-size: 1.6rem;
     }
 }
+

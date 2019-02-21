@@ -1,14 +1,17 @@
 doctype html
 html(lang='en')
     head
-        title= title
+        title="Bildterapihuset"
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1')
         link(href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Bree+Serif|Vidaloka" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700" rel="stylesheet")
         link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css', integrity='sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS', crossorigin='anonymous')
         link(rel='stylesheet', href='stylesheets/style.css')
     body
-        div.container
+        div(class='container p-0')
             include nav.pug
             block content
             include foot.pug
